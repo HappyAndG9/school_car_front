@@ -1,0 +1,38 @@
+server:
+  port:
+  ssl:
+    key-store:
+    key-password:
+    key-store-type:
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#服务器：
+spring:
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      max-active: 20
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mqtt:
+  host:
+  username:
+  password:
+  topic: parkingOccupy
+
+
+
+APPID:
+SECRET:
