@@ -23,7 +23,7 @@ public class MQTTConnect {
   public void setMqttClient(String username, String password, MqttCallback mqttCallback)
       throws MqttException {
 
-    String host = "tcp://43.136.86.199";
+    String host = "";
     MqttConnectOptions options = mqttConnectOptions(host, username, password);
 
     mqttClient.setCallback(mqttCallback);
